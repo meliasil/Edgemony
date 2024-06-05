@@ -1,0 +1,42 @@
+.buttonOne, .buttonTwo, .buttonThree {
+    padding: 40px;
+    border-radius: 40%;
+    background-color: aquamarine;
+    font-size: 40px;
+}
+
+
+.modal {
+    display: none; /* Nascondi la modale di default */
+    position: fixed; /* Rimani in posizione fissa */
+    z-index: 1; /* Sii sopra tutto */
+    left: 0;
+    top: 0;
+    width: 100%; /* Larghezza piena */
+    height: 100%; /* Altezza piena */
+    overflow: auto; /* Abilita lo scroll se necessario */
+    background-color: rgb(0,0,0); /* Colore sfondo */
+    background-color: rgba(0,0,0,0.4); /* Nero con opacità */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% dal top e centrato orizzontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Larghezza del contenuto */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
