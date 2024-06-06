@@ -1,0 +1,38 @@
+.card-product {
+    margin: 10px;
+    border: 1px solid lightblue;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 400px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.card-product:hover {
+    background-color: lightblue;
+    box-shadow: 10px 10px antiquewhite;
+}
+
+
+.titleEl {
+    font-size: 20px;
+    font-style: oblique;
+    color: blue;
+
+}
+
+.card-product img {
+    width: 80px;
+    border-radius: 20%;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.button-class {
+    margin: 1px solid red;
+}
