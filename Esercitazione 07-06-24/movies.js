@@ -1,18 +1,20 @@
-import {API_KEY} from './keys.js';
+import { API_KEY } from "./keys";
 
 
-fetch('https://api.themoviedb.org/3/authentication', {
-    headers: {
-        Authorization: `Bearer ${API_KEY}`
-    }
-})
+const options = {
+    Authorization: `Bearer ${API_KEY}`,
+    accept: application/json
+}
+
+
+fetch('https://api.themoviedb.org/3/movie/popular', options) 
 .then(res => res.json())
-.then(data => { 
-
-const movies = data.results;
+.then(data => {
+    const movies = data.results;
     displayMovies(movies);
-
 })
+
+
 .catch(error => console.error('Errore nel recupero dei dati', error));
 
 
@@ -31,10 +33,15 @@ function displayMovies(movies) {
         const description = document.createElement('p');
         description.className = 'movie-p'
 
-        card.innerHTML = titleEl + image + p;
+        card.innerHTML = (titleEl, image, p);
 
         container.appendChild(card);
     })
-    }})
-        .catch(error => console.error('Errore nel recupero dei dati', error));
+}
 
+const searchBar = document.getElementById('searchBar');
+searchBar.addEventListener('input', (event) => {
+    const searchText = event.target.value.toLowerCase();
+    const filteredMovies = movies.filter(movies => movies.titleEl.toLowerCase().includes(searchText));
+    displayMovies(filteredMovies);
+})
