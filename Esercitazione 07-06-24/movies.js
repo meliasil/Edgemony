@@ -35,11 +35,6 @@ function displayMovies(movies) {
 
         container.appendChild(card);
     })
-}
+    }})
+        .catch(error => console.error('Errore nel recupero dei dati', error));
 
-const searchBar = document.getElementById('searchBar');
-searchBar.addEventListener('input', (event) => {
-    const searchText = event.target.value.toLowerCase();
-    const filteredMovies = movies.filter(movies => movies.titleEl.toLowerCase().includes(searchText));
-    displayMovies(filteredMovies);
-})
