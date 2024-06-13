@@ -24,7 +24,7 @@ const POST = async () => {
     const data = await res.json();
     console.log('Dato aggiunto', data.id)
 
-console.log(await POST());
+console.log(data.id);
 
 
 const productID = res.id;
