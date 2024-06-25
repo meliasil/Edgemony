@@ -1,6 +1,6 @@
 import { getHeaderHTML } from "./components/header.js";
 import { getFooterHTML } from "./components/footer.js";
-import { getMainHTML, renderPosts } from "./components/main.js";
+import { getMainHTML } from "./components/main.js";
 
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -8,16 +8,16 @@ window.addEventListener("DOMContentLoaded", () => {
     const appEl = document.querySelector("#app");
   
     if (appEl) {
-      // dentro la function sono sicuro che appEl sia un elemento caricato nel dom
+
       renderPage(appEl);
     }
   });
 
 
-function renderPage(appEl) {
+async function renderPage(appEl) {
 
     const header = getHeaderHTML();
-    const main = getMainHTML();
+    const main = await getMainHTML();
     const footer = getFooterHTML();
 
 
