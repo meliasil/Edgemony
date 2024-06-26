@@ -41,7 +41,7 @@ function getPostsHTML(props) {
 
     const postsHTML = posts.map(post => {
         return `
-        <article role="listitem">
+        <article role="listItem">
                     <h3>${post.title}</h3>
                     <div><small>By ${post.userId}</small></div>
                     <p>${post.body}</p>

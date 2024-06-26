@@ -1,7 +1,9 @@
+import './Header.css';
+
 
 function Header() {
     
-    return 
+    return (
     <header>
         <div className="container">
             <div className="wrapper">
@@ -10,28 +12,29 @@ function Header() {
             </div>
         </div>
     </header>
-    ;
+    );
 }
 
 function Menu() {
 
-    return 
+    return (
     <nav className="nav">
         <ul className="list">
-            <Menu />
+            <li><a href='#'>About us</a></li>
+            <li><a href='#'>Blog</a></li>
         </ul>
     </nav>
-    ;
+    );
 }
 
 function menuItem() {
 
-    return 
+    return (
     <li className="item">
-        <MenuItem label={'About us'}></MenuItem>
-        <MenuItem label={'Blog'}></MenuItem>
+        <menuItem label={'About us'}></menuItem>
+        <menuItem label={'Blog'}></menuItem>
     </li>
-    ;
+    );
 }
 
 
