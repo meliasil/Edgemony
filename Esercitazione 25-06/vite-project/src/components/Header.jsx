@@ -1,7 +1,7 @@
 
 function Header() {
     
-    return `
+    return 
     <header>
         <div className="container">
             <div className="wrapper">
@@ -10,28 +10,28 @@ function Header() {
             </div>
         </div>
     </header>
-    `;
+    ;
 }
 
 function Menu() {
 
-    return `
+    return 
     <nav className="nav">
         <ul className="list">
             <Menu />
         </ul>
     </nav>
-    `;
+    ;
 }
 
 function menuItem() {
 
-    return `
+    return 
     <li className="item">
-        <MenuItem label={'About us'}
-        <MenuItem label={'Blog'}
+        <MenuItem label={'About us'}></MenuItem>
+        <MenuItem label={'Blog'}></MenuItem>
     </li>
-    `;
+    ;
 }
 
 

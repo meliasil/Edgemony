@@ -1,7 +1,7 @@
 
 function Main() {
     
-    return `
+    return 
     <main>
         <div className="container">
             <div className="wrapper">
@@ -10,28 +10,28 @@ function Main() {
             </div>
         </div>
     </main>
-    `;
+    ;
 }
 
 function Menu() {
 
-    return `
+    return 
     <nav className="nav">
         <ul className="list">
             <Menu />
         </ul>
     </nav>
-    `;
+    ;
 }
 
 function menuItem() {
 
-    return `
+    return 
     <li className="item">
         <MenuItem />
         <MenuItem />
     </li>
-    `;
+    ;
 }
 
 

@@ -1,6 +1,6 @@
 function Footer() {
     
-    return `
+    return 
     <footer className="footer">
         <div className="container">
             <div className="wrapper">
@@ -10,26 +10,26 @@ function Footer() {
                 </nav>
             </div>
         </div>
-    </footer>`;
+    </footer>;
     
 }
 
 function Menu() {
 
-    return `
+    return 
     <ul className="menu">
         <Menu />
     </ul>
-    `;
+    ;
 }
 
 function menuItem() {
 
-    return `
+    return 
 <li className="item">
     <Menu />
 </li>
-`;
+;
 }
 
 
