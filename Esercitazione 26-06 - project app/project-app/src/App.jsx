@@ -3,7 +3,8 @@ import { Header } from './components/Header/Header.jsx';
 import { Main } from './components/Main/Main.jsx';
 import { Footer } from './components/Footer/Footer.jsx';
 import './App.css'
-import { Button } from './components/atoms/Button/Button.jsx';
+/* import { Button } from './components/atoms/Button/Button.jsx'; */
+import posts from "./assets/data.json";
 
 
 function App() {
@@ -12,12 +13,10 @@ function App() {
     <>
     <Header
     brand={{name: 'Edgemony'}}
-    className="header"
-    cta={<button>Click me!</button>}>
+    className="header">
 
     </Header>
-      
-      <Main />
+      <Main posts={posts}/>
       <Footer />
     </>
   )
