@@ -1,0 +1,31 @@
+.random-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 40%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(185, 230, 243);
+    border: 2px solid blueviolet;
+    gap: 10px;
+}
+
+.generate:hover {
+    background-color: blueviolet;
+    color: rgb(185, 230, 243);
+}
+
+h2 {
+    color: blueviolet;
+}
+.display {
+    border: 1px solid blueviolet;
+    padding: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+.counter-container {
+    margin: 20px 40%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(185, 230, 243);
+    border: 2px solid blueviolet;
+    gap: 10px;
+}
+
+
+#add:hover, #sub:hover {
+    background-color: blueviolet;
+    color: rgb(185, 230, 243);
+}
+
