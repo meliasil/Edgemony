@@ -1,0 +1,78 @@
+.formContainer {
+  background-color: #f1f4f5;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.contactForm {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h1 {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formGroup {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  background-color: white;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.formGroup input,
+.formGroup textarea {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formGroup .radioGroup {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioGroup label {
+  width: auto;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxLabel input {
+  margin-right: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007b5e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #005f46;
+}
