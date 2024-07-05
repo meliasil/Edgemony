@@ -1,138 +1,182 @@
-
-
 .container {
-    margin: 100px;
-    position: relative;
-    box-sizing: border-box;
-    background-color: white;
-    width: 700px;
-    height: auto;
-    border-radius: 5%;
-    
+  margin: 100px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  width: auto;
+  height: auto;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
 }
 
-
 .titlesub {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
 }
 
 .title {
-    margin-left: 40px;
-    color: #122f3f
+  margin-left: 40px;
+  color: #122f3f;
 }
-.subtitle, h3 {
-    color: #4e6e7e;
+.subtitle,
+h3 {
+  color: #4e6e7e;
 }
 
 h3 {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .amountform {
-    display: flex;
-    align-items: center;
-    border: 1px solid #4e6e7e; 
-    border-radius: 4px;
-    overflow: hidden;
-    width:600px;
-    margin-left: 50px;
-}
-
-.amountform::target-text {
-    border: 1px solid yellow;
+  display: flex;
+  align-items: center;
+  border: 1px solid #4e6e7e;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 600px;
+  margin-left: 50px;
 }
 
 .amount {
-    border: none; 
-    flex: 1; 
-    outline: none; 
-    font-size: 16px; 
-    
+  border: none;
+  flex: 1;
+  outline: none;
+  font-size: 16px;
 }
-
-
 
 .label {
-    background-color: #e3f3fd; 
-    padding: 10px; 
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid #4e6e7e;
-    border-left: 1px solid #4e6e7e; 
+  background-color: #e3f3fd;
+  padding: 10px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #4e6e7e;
+  border-left: 1px solid #4e6e7e;
 }
 
-.label, .amount {
-    margin: 0;
+.label,
+.amount {
+  margin: 0;
 }
 
 .mortgageterminteresttitles {
-    display: flex;
-    flex-direction: row;
-    gap: 150px; 
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
 }
 .mortgageterminterestinput {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 50px;
 }
 
 .mortgageterminterestinput label {
-    padding: 20px;
+  padding: 20px;
 }
 
-.termform, .interestform {
-    display: flex;
-    align-items: center;
-    border: 1px solid #4e6e7e; 
-    border-radius: 4px; 
-    overflow: hidden; 
+.termform,
+.interestform {
+  display: flex;
+  align-items: center;
+  border: 1px solid #4e6e7e;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.term, .interest {
-    border: none; 
-    padding: 20px; 
-    flex: 1; 
-    font-size: 16px;
+.term,
+.interest {
+  border: none;
+  padding: 20px;
+  flex: 1;
+  font-size: 16px;
 }
 
 .querytype {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
 }
 
-
-.repaymentinput, .onlyinput {
-    border: 1px solid #4e6e7e;
-    border-radius: 4px; 
-    padding: 20px; 
-    flex: 1; 
-    font-size: 16px;
+.repaymentinput,
+.onlyinput {
+  border: 1px solid #4e6e7e;
+  border-radius: 4px;
+  padding: 20px;
+  flex: 1;
+  font-size: 16px;
+  margin-left: 30px;
 }
 
 .buttoncontainer {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
 }
-
 
 button {
-    padding: 20px;
-    border-radius: 40px;
-    background-color: hsl(61, 70%, 52%);
-    border: none;
+  padding: 20px;
+  border-radius: 40px;
+  background-color: hsl(61, 70%, 52%);
+  border: none;
 }
 
-
 .buttonlabel {
-    font-weight: 800;
-    color: #122f3f;
+  font-weight: 800;
+  color: #122f3f;
+}
+
+.containerdx {
+  width: auto;
+  padding: 24px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 5%;
+  background-color: #122f3f;
+}
+
+.resultstext {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex: 1;
+}
+
+.containerdx h2 {
+  color: white;
+  margin-left: 45px;
+}
+
+.resultcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultcontent {
+  width: 500px;
+  height: 300px;
+  background-color: #042334;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  border-top: 4px solid hsl(61, 70%, 52%);
+}
+
+.resultcontent h2 {
+  color: #4e6e7e;
+}
+
+.inputtext {
+  font-size: 30px;
+  color: hsl(61, 70%, 52%);
+  border: none;
+  padding: 50px;
 }
