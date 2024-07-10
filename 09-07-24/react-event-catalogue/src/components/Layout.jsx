@@ -26,7 +26,7 @@ const initialState = [
 
 const initialInput = { title: "", location: "" };
 
-function Layout() {
+function Layout({children}) {
   const [events, setEvents] = useState(initialState);
   const [input, setInput] = useState(initialInput);
   const [filter, setFilter] = useState("");
@@ -52,9 +52,6 @@ function Layout() {
     });
   };
 
-  const handleFilter = (e) => {
-    setFilter(e.target.id);
-  };
 
 
   return (
@@ -80,8 +77,7 @@ function Layout() {
         <button type="submit">Submit</button>
       </form>
 
-      <button id="on presence event" onClick={handleFilter}>On presence Events</button>
-      <button id="remote event" onClick={handleFilter}>Remote Events</button>
+      {children}
 
       <ul>
         {events
@@ -94,6 +90,8 @@ function Layout() {
             );
           })}
       </ul>
+
+      
     </div>
   );
 }
