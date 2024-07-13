@@ -1,0 +1,52 @@
+.container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    justify-content: space-between;
+}
+
+.counter {
+    background-color: var(--light-grayish-blue);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .counter button {
+    all: unset;
+    padding: 8px 16px;
+  }
+  
+  .counter div {
+    text-align: center;
+  }
+
+
+  .priceDiscount {
+    display: flex;
+    gap: 20px;
+  }
+
+.discount {
+    padding: 4px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+}
+
+.prevPrice {
+    text-decoration: line-through;
+}
+
+.counterAdd {
+    display: flex;
+    justify-content: space-between;
+}
+
+  .addCart {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
