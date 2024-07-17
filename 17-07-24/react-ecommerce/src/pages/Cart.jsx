@@ -1,6 +1,16 @@
+/* import { useEffect, useState } from "react";
+
 
 
 function Cart() {
+
+  const [product, setProduct] = useState(null);
+
+useEffect(() => {
+  const product = JSON.parse(localStorage.getItem(product));
+  setProduct(product)
+}, [])
+
   return (
     <div>
       
@@ -8,4 +18,4 @@ function Cart() {
   )
 }
 
-export default Cart;
+export default Cart; */

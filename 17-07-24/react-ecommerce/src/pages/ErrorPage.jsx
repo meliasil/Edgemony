@@ -5,9 +5,9 @@ function ErrorPage() {
 
     return (
         <div className="flex flex-col item-center justify-center w-full">
-            <h1>Sorry!</h1>
+            <h1 className="text-bold">Sorry!</h1>
             <p>An unexpected error has occurred.</p>
-            <i>{error.statusText} || error.message</i>
+            <i>{error.statusText}</i>
         </div>
     )
 }
