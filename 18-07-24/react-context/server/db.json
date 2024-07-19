@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Il nome della rosa",
+      "author": "Umberto Eco",
+      "year": 1980
+    },
+    {
+      "id": 2,
+      "title": "1984",
+      "author": "George Orwell",
+      "year": 1949
+    },
+    {
+      "id": 3,
+      "title": "Il signore degli anelli",
+      "author": "J.R.R. Tolkien",
+      "year": 1954
+    },
+    {
+      "id": 4,
+      "title": "Il grande Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "year": 1925
+    },
+    {
+      "id": 5,
+      "title": "Orgoglio e pregiudizio",
+      "author": "Emily Brontë",
+      "year": 1813
+    },
+    {
+      "id": 6,
+      "title": "Cime tempestose",
+      "authorId": 6,
+      "year": 1847
+    }
+  ]
+}
