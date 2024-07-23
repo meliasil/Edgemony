@@ -9,10 +9,6 @@ function BookProvider({children}) {
 
     const [books, setBooks] = useState([]);
 
-    useEffect(() => {
-        console.log("Initializing books...");
-        setBooks([books]);
-    }, []);
 
 return (
     <BookContext.Provider value={{books}}>

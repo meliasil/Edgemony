@@ -9,7 +9,7 @@ function App() {
   
 
   const handleAdd = (book) => {
-    setBooks((prevState) => prevState + 1)
+    setBooks((prevState) => [prevState, book])
   }
 
 useEffect(() => {
@@ -29,7 +29,7 @@ useEffect(() => {
               <h1 className='text-green-900 text-xl'>"{book.title}"</h1>
               <p className='text-green-900'>{book.author}</p>
               <p className='text-green-900'>{book.year}</p>
-              <button onClick={() => handleAdd(bookList)} className='bg-lime-400 p-4 rounded-full text-sm font-bold'>Add</button>
+              <button onClick={() => handleAdd(book)} className='bg-lime-400 p-4 rounded-full text-sm font-bold'>Add</button>
             </li>
           )
         })}
