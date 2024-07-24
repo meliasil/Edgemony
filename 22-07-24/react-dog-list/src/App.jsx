@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 function App() {
   const [dogs, setDogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [filter, setFilter] = useState("");
 
   const getDogs = async () => {
     try {
@@ -16,6 +17,10 @@ function App() {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handleChange = (e) => {
+    setFilter(e.target.value.toLowerCase());
   };
 
   useEffect(() => {
@@ -30,6 +35,13 @@ function App() {
         <main className="w-[1200px] ">
           <div className="p-4 ">
             <h1 className="font-bold">{labels.dogList}</h1>
+          </div>
+          <div className="flex gap-2 items-center">
+            <input type="text"
+            value={filter}
+            placeholder="Insert Dog Name"
+            onChange={handleChange}
+            />
           </div>
 
           <div className="overflow-x-auto">
@@ -49,7 +61,8 @@ function App() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                {dogs.map((dog) => {
+                {dogs.filter((dog) => dog.name.toLowerCase().includes(filter))
+                .map((dog) => {
                   return (
                     <tr key={dog.id}>
                       <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
