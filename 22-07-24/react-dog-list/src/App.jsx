@@ -1,6 +1,7 @@
 import { labels } from "./data/labels";
 import { useEffect, useState } from "react";
 import { getDogList } from "./api/dogClient";
+import { Link } from "react-router-dom";
 
 function App() {
   const [dogs, setDogs] = useState([]);
@@ -12,23 +13,23 @@ function App() {
       setDogs(data);
     } catch (error) {
       console.log("Error:", error);
-    } /* finally {
+    } finally {
       setIsLoading(false);
-    } */
+    }
   };
 
   useEffect(() => {
     getDogs();
   }, []);
 
-  /* if (isLoading) return <p>is loading..</p>; */
+  if (isLoading) return <p>is loading..</p>;
 
   return (
     <>
       <div className="flex justify-center">
         <main className="w-[1200px] ">
           <div className="p-4 ">
-            <h1 className="">{labels.DogList}</h1>
+            <h1 className="font-bold">{labels.dogList}</h1>
           </div>
 
           <div className="overflow-x-auto">
@@ -61,12 +62,12 @@ function App() {
                         {dog.id}
                       </td>
                       <td className="whitespace-nowrap px-4 py-2">
-                        <a
-                          href="#"
+                        <Link
+                          to={`/dog/${dog.id}`}
                           className="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
                         >
                           View
-                        </a>
+                        </Link>
                       </td> 
                     </tr>
                   );

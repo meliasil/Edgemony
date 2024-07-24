@@ -4,5 +4,6 @@ export const labels = {
 	dogListType: "Type",
 	dogListId: "Id",
 
-	DogList: "Dog List"
+	dogList: "Dog List",
+	navHome: "Home",
 }
