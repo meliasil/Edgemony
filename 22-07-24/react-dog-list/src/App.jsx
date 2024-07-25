@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import { getDogList } from "./api/dogClient";
 import { Link } from "react-router-dom";
 
+
 function App() {
+  
   const [dogs, setDogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [filter, setFilter] = useState("");
