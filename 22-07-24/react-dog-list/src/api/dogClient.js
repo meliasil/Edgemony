@@ -52,14 +52,15 @@ export const getDogDetail = () => {
   });
 };
 
-/* export const getDogList = async () => {
-	try {
 
-		const res = await fetch("https://dogapi.dog/api/v2/breeds");
-		return res.json()
-
-	} catch (error) {
-		throw new Error("Error:", error)
-
-	}
-};  */
+export const addDog = (body) => {
+	return new Promise((resolve) => {
+		setTimeout(() => {
+			resolve(
+				{
+					...body, id: self.crypto.randomUUID(),
+				}
+			)
+		}, 3000)
+	})
+}

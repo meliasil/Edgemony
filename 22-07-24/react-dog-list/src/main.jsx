@@ -1,12 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import DefaultLayout from './layout/DefaultLayout.jsx'
-import ErrorPage from './pages/ErrorPage.jsx'
-import DogDetailPage from './pages/DogDetailPage.jsx'
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DefaultLayout from "./layout/DefaultLayout.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
+import DogDetailPage from "./pages/DogDetailPage.jsx";
+import Create from "./pages/Create.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,13 +22,16 @@ const router = createBrowserRouter([
         path: "dog/:id",
         element: <DogDetailPage />,
       },
-  ]}
-])
+      {
+        path: "create",
+        element: <Create />,
+      },
+    ],
+  },
+]);
 
-
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
