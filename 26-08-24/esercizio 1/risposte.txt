@@ -1,0 +1,14 @@
+n.1
+Le principali componenti sono: il TOKENIZER che divide il codice in parti più piccole (token), le quali possono essere numeri, punteggiatura, etichette, operatori;
+il PARSER che prende i valori generati dal tokenizer e li trasforma in Abstract Syntax Tree (AST), un albero di codice formato da nodi;
+il TRANSFORMER trasforma l'AST in un nuovo AST;
+il CODE GENERATOR che  traduce il nuovo AST in un nuovo linguaggio.
+
+n.2
+La funzione TOKENIZER suddivide una stringa in parti più piccole (ad es. "(add 2 (subtract 4 2))) viene suddiviso in "(", "add", "2", "(", "subtract", "4", "2", ")", ")" ).
+
+n.3
+E' essenziale perché prende i token derivati dal Tokenizer e li organizza in Abstract Syntax Tree per rendere il codice più leggibile e maipolabile.
+
+n.4
+Per creare un conta caratteri la funzione più utile di questo compilatore sarebbe il TOKENIZER che consentirebbe di iterare sulla stringa e di incrementare un valore per ogni carattere incontrato.
