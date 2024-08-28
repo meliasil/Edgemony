@@ -1,26 +1,27 @@
-import Card from "@/components/card/card";
+import Card, {ICard} from "@/components/card/card";
+
+const cards : ICard[] = [
+  {
+    title: "Next.js",
+    description: "The React Framework for Production.",
+    imageUrl: "27-08-24\next-cardsappicons\next icon.png",
+    linkUrl: "https://nextjs.org/",
+  },
+  {
+    title: "React",
+    description: "A JavaScript library for building user interfaces.",
+    imageUrl: "/react.png",
+    linkUrl: "https://reactjs.org/",
+  },
+  {
+    title: "TypeScript",
+    description: "Typed JavaScript at Any Scale.",
+    imageUrl: "/typescript.png",
+    linkUrl: "https://www.typescriptlang.org/",
+  },
+];
 
 function Home() {
-  const cards = [
-    {
-      title: "Next.js",
-      description: "The React Framework for Production.",
-      imageUrl: "27-08-24\next-cardsappicons\next icon.png",
-      linkUrl: "https://nextjs.org/",
-    },
-    {
-      title: "React",
-      description: "A JavaScript library for building user interfaces.",
-      imageUrl: "/react.png",
-      linkUrl: "https://reactjs.org/",
-    },
-    {
-      title: "TypeScript",
-      description: "Typed JavaScript at Any Scale.",
-      imageUrl: "/typescript.png",
-      linkUrl: "https://www.typescriptlang.org/",
-    },
-  ];
 
   return (
     <div className="flex justify-center gap-10">
@@ -30,8 +31,8 @@ function Home() {
       <link rel="icon" href="/favicon.ico" />
 
       <main style={{ display: "flex", gap: "16px", padding: "16px" }}>
-        {cards.map((card, index) => (
-          <Card key={index} {...card} />
+      {cards.map((card, index) => (
+          <Card key={index} card={card} />
         ))}
       </main>
     </div>
