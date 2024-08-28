@@ -27,6 +27,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/components/Card"
-  ],
+, "app/page/detail.js", "app/components/GetDog/GetDog.tsx"  ],
   "exclude": ["node_modules"]
 }
