@@ -1,3 +1,6 @@
+import Button from "../Button/button";
+
+
 export interface ICard {
   image: string;
   title: string;
@@ -24,7 +27,7 @@ function Card({ card }: CardProps) {
 
         <div className="bottom-0 left-0 p-4 w-full">
           <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-            <p className="text-sm text-white">{card.description}</p>
+            <Button card={card}/>
           </div>
         </div>
       </div>

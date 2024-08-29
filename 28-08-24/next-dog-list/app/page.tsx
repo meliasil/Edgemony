@@ -27,14 +27,14 @@ const card: ICard[] = [
 export default function Home() {
   return (
     <div className="flex flex-col gap-20">
-      <div className="flex justify-center">
+      <div className="flex flex-row justify-center">
         <h1 className="font-bold text-6xl p-10 text-pink-500">Dog List</h1>
       </div>
-      <main className="flex justify-center gap-10 p-10">
+      <div className="flex flex-row p-10 gap-20">
         {card.map((card, index) => (
           <Card key={index} card={card} />
         ))}
-      </main>
+      </div>
     </div>
   );
 }
